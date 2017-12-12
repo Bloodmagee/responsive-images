@@ -1,0 +1,50 @@
+ul {
+    list-style: none;
+}
+
+body{
+    padding: 0;
+	margin: 1;
+	box-sizing: border-box;
+    text-align: center;
+}
+
+
+li {
+    margin: 1.5;
+    float: left;
+    text-align: center;
+}
+
+img {
+    border: none;
+    width:90%;
+    transform: translate3d(2px);
+}
+
+@media screen and (min-width: 1px) {
+	li {
+		width: 100%;
+	}
+	img:hover {
+                transform:  translate(5px,15px);
+        }
+}
+
+@media screen and (min-width: 600px) {
+        li {
+            width: 50%;
+        } 
+        img:hover {
+            transform: rotate(20deg);
+        }
+}
+
+@media screen and (min-width: 1200px){
+    li {
+        width: 25%;
+    }
+    img:hover {
+         transform: scale(1.5);
+    }
+}
